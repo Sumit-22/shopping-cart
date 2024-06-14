@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OrderPlaceActivity">
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/tborderFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_yellow"
+    app:titleTextColor="@color/black"
+    app:navigationIcon="@drawable/baseline_arrow_back_24"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:title="Checkout" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1.30dp"
+        android:background="#DAD4D4"
+        app:layout_constraintTop_toBottomOf="@id/tborderFragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCartProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="13.00dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="0dp"
+        android:padding="6.50dp"
+        android:layout_margin="7.80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProductsItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13.00dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBillDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="13.00dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="0dp"
+        android:padding="6.50dp"
+        android:layout_margin="7.80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvCartProducts"  >
+      <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="13.00dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Bill Details"
+              android:textColor="@color/black"
+              android:textSize="19.50sp"
+              android:textStyle="bold"/>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1"
+              android:layout_marginTop="10.40dp"
+              android:orientation="horizontal"
+              >
+              <ImageView
+                  android:layout_width="16.90sp"
+                  android:layout_height="16.90sp"
+                  android:layout_gravity="center"
+                  android:layout_weight="0"
+                  android:src="@drawable/baseline_article_24"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Sub Total"
+                  android:layout_weight="0.6"
+                  android:layout_marginStart="13.00dp"
+                  android:textSize="15.60sp"
+                  android:textStyle="bold"/>
+              <TextView
+                  android:id="@+id/tvSubTotal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="179"
+                  android:layout_weight="0.4"
+                  android:layout_marginEnd="13.00dp"
+                  android:gravity="end"
+                  android:textSize="15.60sp"
+                  android:textStyle="bold"/>
+
+
+
+
+
+        </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1"
+              android:layout_marginTop="10.40dp"
+              android:orientation="horizontal"
+              >
+              <ImageView
+                  android:layout_width="16.90sp"
+                  android:layout_height="16.90sp"
+                  android:layout_gravity="center"
+                  android:layout_weight="0"
+                  android:src="@drawable/baseline_directions_bike_24"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Delivery Charge"
+                  android:layout_weight="0.6"
+                  android:layout_marginStart="13.00dp"
+                  android:textSize="15.60sp"
+                  android:textStyle="bold"/>
+              <TextView
+                  android:id="@+id/tvDeliveryCharges"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Free"
+                  android:layout_weight="0.4"
+                  android:layout_marginEnd="13.00dp"
+                  android:gravity="end"
+                  android:textSize="15.60sp"
+                  android:textStyle="bold"/>
+
+
+
+
+
+          </LinearLayout>
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="10.40dp"
+                android:orientation="horizontal"
+                >
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grand Total"
+                    android:layout_weight="0.5"
+                    android:textSize="18.20sp"
+                    android:textStyle="bold"
+                     android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tvGrandTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="195"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5"
+                    android:layout_marginEnd="13.00dp"
+                    android:gravity="end"
+                    android:textSize="18.20sp"
+                    android:textStyle="bold"/>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/llCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet"
+        android:layout_gravity="bottom|center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="13.00dp"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/phonepay" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Phonepe UPI"
+                android:textSize="18.20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_product_count"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Place Order"
+                android:textColor="#ffffff"
+                android:textSize="16.90sp"
+                android:textStyle="bold"
+                />
+            <ImageButton
+                android:layout_width="32.50dp"
+                android:layout_height="32.50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="6.50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_arrow_right_24"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
