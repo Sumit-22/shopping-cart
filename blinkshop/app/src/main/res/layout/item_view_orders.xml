@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="6.50dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13.00dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/llOrderData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.50dp"
+                android:layout_marginBottom="6.50dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOrderDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.70"
+                    android:textStyle="bold"
+                    android:text="10-11-2023"
+                    android:textSize="16.90sp"
+                    android:textColor="@color/blue_btn"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOrderStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.30"
+                    android:background="@drawable/bg_orders_status"
+                    android:backgroundTint="@color/yellow"
+                    android:text="Delivered"
+                    android:textSize="16.90sp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.50dp"
+                android:layout_marginBottom="6.50dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOrderTitles"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:layout_weight="0.75"
+                    android:ellipsize="end"
+                    android:text="Vegetables and Fruits ,Dairy and Breakfast,Cold Drinks and Juices ..."
+                    android:textSize="16.90sp"
+                    android:textColor="@color/black"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOrderAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:text="Rs.25"
+                    android:textSize="16.90sp"
+                    android:textColor="@color/green"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

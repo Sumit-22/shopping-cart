@@ -1,0 +1,9 @@
+<resources>
+<declare-styleable name="TextInputLayout">
+    <attr name="cursorColor" format="color"/>
+</declare-styleable>
+    <declare-styleable name="WaveView">
+        <attr name="waveColor" format="color" />
+        <attr name="waveAmplitude" format="dimension" />
+    </declare-styleable>
+</resources>
