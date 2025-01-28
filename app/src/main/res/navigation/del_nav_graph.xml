@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/del_nav_graph"
+    app:startDestination="@id/deliveryAuth">
+
+    <fragment
+        android:id="@+id/deliveryAuth"
+        android:name="com.example.blinkshop.delivery.deliveryAuth"
+        android:label="fragment_delivery_auth"
+        tools:layout="@layout/fragment_delivery_auth" >
+        <action
+            android:id="@+id/action_deliveryAuth_to_deliverydashFragment"
+            app:enterAnim="@anim/from_right"
+            app:destination="@id/deliverydashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deliverydashFragment"
+        android:name="com.example.blinkshop.delivery.deliverydashFragment"
+        android:label="fragment_deliverydash"
+        tools:layout="@layout/fragment_deliverydash" >
+        <action
+            android:id="@+id/action_deliverydashFragment_to_signinFragment"
+            app:enterAnim="@anim/from_right"
+            app:destination="@id/signinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signinFragment"
+        android:name="com.example.blinkshop.auth.SigninFragment"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin" />
+</navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "352220180955",
+    "project_id": "shopping-cart-80cc4",
+    "storage_bucket": "shopping-cart-80cc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352220180955:android:69d7e041b039b23d0037fe",
+        "android_client_info": {
+          "package_name": "com.example.blinkshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzNF3tmOxTSle5T_oS64qmq3b9T0z_Do0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

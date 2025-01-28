@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#ECC143</color>
+    <color name ="green">#008B13</color>
+    <color name="dark_grey">#7a7a7a</color>
+    <color name="light_bg">#95d2d6</color>
+    <color name="correctbtncolor">#41B9EF</color>
+    <color name="wrongbtncolor">#008B13</color>
+    <color name="blue_btn">#41B9EF</color>
+    <color name="white_yellow">#FFFFFFFF</color>
+    <color name="dark_blue">#126077</color>
+    <color name="orange">#FFCD483E</color>
+    <color name="cursorColor">#2196F3</color>
+    <color name ="dashcolor_1">#cbd5e1</color>
+    <color name="dastext">#2d3875</color>
+    <color name="your_wave_color">#FF000000</color>
+</resources>

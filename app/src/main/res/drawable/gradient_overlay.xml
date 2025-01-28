@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <bitmap
+            android:src="@drawable/cloud"
+            android:tileMode="clamp"
+            android:gravity="center"/>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/cloud"
+            android:tileMode="clamp"
+            android:gravity="center"/>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#36435C"
+                android:centerColor="#32435CEB"
+                android:endColor="#36435C33"
+                android:angle="0"/>
+        </shape>
+    </item>
+</layer-list>

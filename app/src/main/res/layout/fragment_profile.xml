@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:titleTextColor="@color/black"
+        app:title="Profile"/>
+<View
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="1.3dp"
+    android:background="#DAD4D4"
+    android:layout_marginBottom="10dp"
+    app:layout_constraintTop_toBottomOf="@+id/tbProfileFragment"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your account"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="1.00dp"
+        android:textStyle="bold"
+        android:textSize="20.40sp"
+        android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="8092432741"
+            android:layout_marginTop="6.50dp"
+            android:layout_marginBottom="10.00dp"
+            android:textSize="16.50sp"
+            android:textColor="@color/black"/>
+</LinearLayout>
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:backgroundTint="#CBD5E1"
+        app:cardCornerRadius="14.50dp"
+        app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:padding="9dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl1"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/wallet"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/baseline_wallet_24"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="wallet"
+                    android:layout_marginStart="8.00dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16.90sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wallet"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="24dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/support"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/baseline_contact_support_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="support"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16.90sp"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/support"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="24dp">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/Payments"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/baseline_payment_24"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="payments"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16.90sp"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Payments"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR INFORMATION"
+            android:layout_marginTop="19.50dp"
+            android:textSize="15.60sp"
+            android:textColor="#6B6C74"
+            />
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    android:layout_margin="9.00dp"
+    app:cardCornerRadius="14.50dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="13.00dp"
+        android:weightSum="1">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.50dp"
+            android:src="@drawable/baseline_backpack_24"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Your Orders"
+            android:layout_marginStart="13.00dp"
+            android:textSize="16.90sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="26.00dp"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            android:tint="@color/black"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:id="@+id/llAddressBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="13.00dp"
+            android:weightSum="1">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.50dp"
+                android:src="@drawable/baseline_location_city_24"
+                android:tint="@color/black"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Address Book"
+                android:layout_marginStart="13.00dp"
+                android:textSize="16.90sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="26.00dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                android:tint="@color/black"
+                />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="13.00dp"
+            android:weightSum="1">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.50dp"
+                android:tint="@color/black"
+                android:src="@drawable/baseline_logout_24"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Log Out"
+                android:layout_marginStart="13.00dp"
+                android:textSize="16.90sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="26.00dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                android:tint="@color/black"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
