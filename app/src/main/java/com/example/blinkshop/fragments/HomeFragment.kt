@@ -230,7 +230,8 @@ class HomeFragment : Fragment() {
         val bs=BottomSheetDialog(requireContext())
             bs.setContentView(bsSeeAllBinding.root)
 
-        adapterProduct=AdapterProduct(::onAddButtonClicked,::onIncrementButtonClicked,::onDecrementButtonClicked)
+        adapterProduct=AdapterProduct(::onProductClicked,::onAddButtonClicked,::onIncrementButtonClicked,::onDecrementButtonClicked)
+
         bsSeeAllBinding.rvProducts.adapter=adapterProduct
         adapterProduct.differ.submitList(productType.products)
 
@@ -301,6 +302,9 @@ class HomeFragment : Fragment() {
         else{
             Utils.showToast(requireContext(),"Can't add more products")
         }
+    }
+    private fun onProductClicked(product: Product,productBinding: ItemViewProductBinding){
+        findNavController().navigate(R.id.action_searchFragment_to_productFragment)
     }
 
     private fun onDecrementButtonClicked(product: Product, productBinding: ItemViewProductBinding){

@@ -116,6 +116,7 @@ class searchFragment : Fragment() {
                     binding.tvText.visibility=View.GONE
                 }
                 adapterProduct = AdapterProduct(
+                    ::onProductClicked,
                     ::onAddButtonClicked,
                     ::onIncrementButtonClicked,
                     ::onDecrementButtonClicked
@@ -137,6 +138,9 @@ class searchFragment : Fragment() {
         }
     }
 
+    private fun onProductClicked(product: Product,productBinding: ItemViewProductBinding){
+        findNavController().navigate(R.id.action_searchFragment_to_productFragment)
+    }
 
     private fun onAddButtonClicked(product: Product ,productBinding: ItemViewProductBinding){
         productBinding.apply {

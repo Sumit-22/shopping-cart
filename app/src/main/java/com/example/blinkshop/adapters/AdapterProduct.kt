@@ -18,6 +18,7 @@ import com.example.blinkshop.models.Product
 
 
 class AdapterProduct(
+    val onProductClicked: (Product, ItemViewProductBinding) -> Unit,
     val onAddButtonClicked: (Product, ItemViewProductBinding) -> Unit,
     val onIncrementButtonClicked: (Product, ItemViewProductBinding) -> Unit,
     val onDecrementButtonClicked: (Product, ItemViewProductBinding) -> Unit
@@ -66,6 +67,9 @@ class AdapterProduct(
                 ivImageSlider.setImageList(imageList)
 
                 tvProductTitle.text = product.productTitle
+                tvProductTitle.setOnClickListener{
+                        onProductClicked(product,this)
+                    }
 
                 val quantity = product.ProductQuantity.toString() +" "+ product.productUnit
 
@@ -91,6 +95,7 @@ class AdapterProduct(
                 tvDecrementCount.setOnClickListener {
                     onDecrementButtonClicked(product,this)
                 }
+
             }
 
 

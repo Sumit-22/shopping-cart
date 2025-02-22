@@ -87,7 +87,7 @@ class categoryFragment : Fragment() {
                     binding.rvProducts.visibility=View.VISIBLE
                     binding.tvText.visibility=View.GONE
                 }
-                adapterProduct = AdapterProduct(::onAddButtonClicked,::onIncrementButtonClicked,::onDecrementButtonClicked)
+                adapterProduct = AdapterProduct(::onProductClicked,::onAddButtonClicked,::onIncrementButtonClicked,::onDecrementButtonClicked)
                 binding.rvProducts.adapter=adapterProduct
                 adapterProduct.differ.submitList(it)
                 adapterProduct.originalList = it as ArrayList<Product>
@@ -177,6 +177,9 @@ class categoryFragment : Fragment() {
         else{
             Utils.showToast(requireContext(),"Can't add more products")
         }
+    }
+    private fun onProductClicked(product: Product,productBinding: ItemViewProductBinding){
+        findNavController().navigate(R.id.action_searchFragment_to_productFragment)
     }
 
     private fun onDecrementButtonClicked(product: Product, productBinding: ItemViewProductBinding){
