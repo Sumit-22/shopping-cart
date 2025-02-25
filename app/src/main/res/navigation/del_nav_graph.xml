@@ -13,21 +13,25 @@
         <action
             android:id="@+id/action_deliveryAuth_to_deliverydashFragment"
             app:enterAnim="@anim/from_right"
-            app:destination="@id/deliverydashFragment" />
+            app:destination="@id/deliverydashFragment" >
+        <argument
+            android:name="partner"
+            app:argType="com.example.blinkshop.models.DeliveryPartner"
+
+            />
+        </action>
+
     </fragment>
     <fragment
         android:id="@+id/deliverydashFragment"
         android:name="com.example.blinkshop.delivery.deliverydashFragment"
         android:label="fragment_deliverydash"
         tools:layout="@layout/fragment_deliverydash" >
-        <action
-            android:id="@+id/action_deliverydashFragment_to_signinFragment"
-            app:enterAnim="@anim/from_right"
-            app:destination="@id/signinFragment" />
+        <argument
+            android:name="partner"
+            app:argType="com.example.blinkshop.models.DeliveryPartner"
+
+            />
     </fragment>
-    <fragment
-        android:id="@+id/signinFragment"
-        android:name="com.example.blinkshop.auth.SigninFragment"
-        android:label="fragment_signin"
-        tools:layout="@layout/fragment_signin" />
+
 </navigation>

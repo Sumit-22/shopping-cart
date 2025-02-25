@@ -9,27 +9,40 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.blinkshop.R
 import com.example.blinkshop.databinding.FragmentDeliverydashBinding
+import com.example.blinkshop.models.DeliveryPartner
 
 
 class deliverydashFragment : Fragment() {
 
-    private lateinit var binding: FragmentDeliverydashBinding
+    private var _binding: FragmentDeliverydashBinding? = null
+    private val binding get() = _binding!!
+    //private lateinit var binding: FragmentDeliverydashBinding
+    //private lateinit var partner:DeliveryPartner
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        loadFragment(AvailableFragment())
-        clickbtnAvailable()
-        clickbtnDelivered()
+
+
+
+    }
+
+    private fun fetchPartnerinfo() {
+        val args = deliverydashFragmentArgs.fromBundle(requireArguments())
+        binding.partner = args.partner
+
     }
 
     private fun clickbtnAvailable() {
         binding.btnAvailable.setOnClickListener {
             loadFragment(AvailableFragment())
+            //show the available order
         }
     }
 
     private fun clickbtnDelivered() {
        binding.btnDelivered.setOnClickListener {
            loadFragment(DeliveredFragment())
+           //show the delivered order
        }
     }
 
@@ -46,8 +59,16 @@ class deliverydashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentDeliverydashBinding.inflate(layoutInflater)
+        _binding = FragmentDeliverydashBinding.inflate(layoutInflater)
+        fetchPartnerinfo()
+        loadFragment(AvailableFragment())
+        clickbtnAvailable()
+        clickbtnDelivered()
         return binding.root
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null // Avoid memory leaks
     }
 
 }
