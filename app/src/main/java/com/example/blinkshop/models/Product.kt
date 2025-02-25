@@ -1,8 +1,8 @@
 package com.example.blinkshop.models
 
-import java.util.UUID
-import java.util.concurrent.CountDownLatch
-
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+@Parcelize
 data class Product(
     var productRandomId :String? = null,
     var productTitle :String ? = null,
@@ -14,5 +14,6 @@ data class Product(
     var productType :String ? = null,
     var itemCount :Int ? =null,
     var adminUid :String ? = null,
+    @JvmSuppressWildcards
     var productImageUris :List<String?> =emptyList()
-   )
+   ):Parcelable

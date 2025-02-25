@@ -3,7 +3,9 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="2.60dp"
+    android:layout_marginVertical="2.60dp"
+    android:layout_marginStart="2.60dp"
+    android:layout_marginEnd=".60dp"
     android:id="@+id/mainBG"
     >
     <LinearLayout
@@ -11,7 +13,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="@dimen/_8sdp"
+        android:layout_marginVertical="10.40dp"
+        android:layout_marginStart="10.40dp"
+        android:layout_marginEnd="4.40dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:orientation="vertical">

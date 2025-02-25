@@ -22,6 +22,7 @@ import com.example.blinkshop.models.Product
 import com.example.blinkshop.roomdb.CartProducts
 import com.example.blinkshop.viewmodels.userViewModel
 import kotlinx.coroutines.launch
+import com.example.blinkshop.fragments.categoryFragmentDirections
 
 
 class categoryFragment : Fragment() {
@@ -179,7 +180,8 @@ class categoryFragment : Fragment() {
         }
     }
     private fun onProductClicked(product: Product,productBinding: ItemViewProductBinding){
-        findNavController().navigate(R.id.action_searchFragment_to_productFragment)
+
+        findNavController().navigate( categoryFragmentDirections.actionCategoryFragmentToProductFragment(product))
     }
 
     private fun onDecrementButtonClicked(product: Product, productBinding: ItemViewProductBinding){

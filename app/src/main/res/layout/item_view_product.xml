@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="1.90dp"
     android:layout_height="wrap_content">
     <androidx.cardview.widget.CardView
         android:id="@+id/cvProduct"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
         app:cardCornerRadius="13.00dp"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="3.00dp"
             android:layout_gravity="center"
@@ -27,7 +27,7 @@
             <com.denzcoskun.imageslider.ImageSlider
                 android:id="@+id/ivImageSlider"
                 android:layout_width="wrap_content"
-                android:layout_height="86.00dp"
+                android:layout_height="95dp"
                 app:iss_auto_cycle="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -79,8 +79,8 @@
                     android:paintFlags="strike_thru_text_flag" />-->
                     <TextView
                         android:id="@+id/tvAdd"
-                        android:layout_width="45.00dp"
-                        android:layout_height="27dp"
+                        android:layout_width="50.00dp"
+                        android:layout_height="30dp"
                         android:text="Add"
                         android:textStyle="bold"
                         android:layout_marginEnd="3dp"
@@ -95,7 +95,7 @@
                     <LinearLayout
                         android:visibility="gone"
                         android:id="@+id/llProductCount"
-                        android:layout_width="45.00dp"
+                        android:layout_width="50.00dp"
                         android:layout_height="30dp"
                         android:background="@drawable/bg_product_count"
                         android:gravity="center"
@@ -113,7 +113,7 @@
                             android:gravity="center"
                             android:text="-"
                             android:textColor="@color/white"
-                            android:textSize="10.50dp" />
+                            android:textSize="17dp" />
 
                         <TextView
                             android:id="@+id/tvProductCount"
@@ -123,7 +123,7 @@
                             android:gravity="center"
                             android:text="0"
                             android:textColor="@color/white"
-                            android:textSize="10.50dp" />
+                            android:textSize="17dp" />
 
                         <TextView
                             android:id="@+id/tvIncrementCount"
@@ -133,7 +133,7 @@
                             android:gravity="center"
                             android:text="+"
                             android:textColor="@color/white"
-                            android:textSize="10.50dp" />
+                            android:textSize="17dp" />
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

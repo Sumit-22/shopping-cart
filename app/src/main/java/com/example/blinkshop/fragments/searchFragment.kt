@@ -19,7 +19,6 @@ import com.example.blinkshop.Constants
 import com.example.blinkshop.R
 import com.example.blinkshop.Utils
 import com.example.blinkshop.adapters.AdapterProduct
-import com.example.blinkshop.adapters.adapterCategory
 import com.example.blinkshop.adapters.adapterSearchCategory
 import com.example.blinkshop.databinding.FragmentSearchBinding
 import com.example.blinkshop.databinding.ItemViewProductBinding
@@ -28,6 +27,8 @@ import com.example.blinkshop.models.Product
 import com.example.blinkshop.roomdb.CartProducts
 import com.example.blinkshop.viewmodels.userViewModel
 import kotlinx.coroutines.launch
+
+
 
 
 class searchFragment : Fragment() {
@@ -80,7 +81,11 @@ class searchFragment : Fragment() {
         binding.searchEt.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 val query = s.toString().trim()
-                adapterProduct.filter?.filter(query)
+                if (::adapterProduct.isInitialized) {
+                    adapterProduct.filter?.filter(query)
+                }else {
+                    Log.e("SearchFragment", "adapterProduct is not initialized")
+                }
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -139,7 +144,8 @@ class searchFragment : Fragment() {
     }
 
     private fun onProductClicked(product: Product,productBinding: ItemViewProductBinding){
-        findNavController().navigate(R.id.action_searchFragment_to_productFragment)
+        val action = searchFragmentDirections.actionSearchFragmentToProductFragment(product)
+        findNavController().navigate(action)
     }
 
     private fun onAddButtonClicked(product: Product ,productBinding: ItemViewProductBinding){

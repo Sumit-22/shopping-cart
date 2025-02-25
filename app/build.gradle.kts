@@ -2,8 +2,9 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    id("kotlin-parcelize")
     id("com.google.gms.google-services")
-
+    id ("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -75,8 +76,8 @@ dependencies {
     implementation("com.intuit.ssp:ssp-android:1.1.0")
 
     // Navigation Component
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
     //lifecycle
     implementation ("androidx.activity:activity-ktx:1.9.0")
     implementation ("androidx.fragment:fragment-ktx:1.3.6")
@@ -111,7 +112,7 @@ dependencies {
     implementation("androidx.room:room-ktx:$room_version")
 //    //glide
     implementation("com.github.bumptech.glide:glide:4.15.0")
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.0")
+    kapt ("com.github.bumptech.glide:compiler:4.15.0")
 //
 //    // phone pay
     implementation("phonepe.intentsdk.android.release:IntentSDK:2.4.3")
@@ -127,6 +128,7 @@ dependencies {
 
     //lottie files
     implementation ("com.airbnb.android:lottie:3.4.0")
-
+    //google map
+    implementation ("com.google.android.gms:play-services-maps:18.1.0")
 
 }
