@@ -58,7 +58,12 @@ BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a c
 <img src="screenshots/deliveryScreen.jpg" width="300">
 <img src="screenshots/OTPscreen.jpg" width="300">
 <img src="screenshots/homeScreen.jpg" width="300">
+<img src="screenshots/homeScreen2.jpg" width="300">
+<img src="screenshots/homeScreen3.jpg" width="300">
+<img src="screenshots/dialogCart.jpg" width="300">
 <img src="screenshots/searchScreen.jpg" width="300">
+<img src="screenshots/productDetail.jpg" width="300">
+<img src="screenshots/categoryScreen.jpg" width="300">
 <img src="screenshots/checkoutScreen.jpg" width="300">
 <img src="screenshots/paymentScreen.jpg" width="300">
 <img src="screenshots/profileScreen.jpg" width="300">
