@@ -51,16 +51,16 @@ BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a c
    - Build and install the app on an emulator or physical device.
 
 ## 📸 Screenshots
-![Splash Screen](screenshots/splashScreen.png)
-![LogIn Screen](screenshots/loginScreen.png)
-![Delivery Screen](screenshots/deliveryScreen.png)
-![OTP Screen](screenshots/OTPscreen.png)
-![Home Screen](screenshots/homeScreen.png)
-![Product Page](screenshots/searchScreen.png)
-![Checkout Screen](screenshots/checkoutScreen.png)
-![Payment Screen](screenshots/paymentScreen.png)
-![Profile Screen](screenshots/profileScreen.png)
-![Order Screen](screenshots/orderScreen.png)
+<img src="screenshots/splashScreen.jpg" width="300">
+<img src="screenshots/loginScreen.jpg" width="300">
+<img src="screenshots/deliveryScreen.jpg" width="300">
+<img src="screenshots/OTPscreen.jpg" width="300">
+<img src="screenshots/homeScreen.jpg" width="300">
+<img src="screenshots/searchScreen.jpg" width="300">
+<img src="screenshots/checkoutScreen.jpg" width="300">
+<img src="screenshots/paymentScreen.jpg" width="300">
+<img src="screenshots/profileScreen.jpg" width="300">
+<img src="screenshots/orderScreen.jpg" width="300">
 
 
 ## 🛠️ Future Enhancements
