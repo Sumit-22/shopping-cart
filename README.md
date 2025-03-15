@@ -3,7 +3,7 @@
 BlinkShop is a fully functional **e-commerce application** built using **Kotlin**, following the **MVVM architecture**. It provides a seamless shopping experience with features like authentication, product management, cart functionality, and payment integration.
 
 ## 📌 Features
-- **👥 User & Admin Modules**: Two separate experiences – customers can browse and shop, while admins get full control to manage products, orders, and user data.
+- **👥 User & Admin Modules**: Two separate experiences – customers can browse and shop, while admins can manage products, orders, and user data.
 - **🔐 Secure Authentication**: Sign up and log in seamlessly using Firebase Authentication, ensuring data security and a smooth user experience.
 - **🛍️ Smart Product Management**: Admins can effortlessly add, edit, delete, and manage products, keeping the store up to date with the latest offerings.
 - **🛒 Intuitive Cart & Easy Checkout**: Users can add or remove products to their cart and proceed with a seamless checkout process.
@@ -58,7 +58,7 @@ BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a c
 - Add Wishlist functionality.
 - Introduce AI-powered product recommendations.
 - Implement push notifications for order updates.
--Integrate voice search functionality
+- Integrate voice search functionality
 
 ## 🤝 Contributing
 Contributions are welcome! Feel free to fork the repository and submit a PR.
