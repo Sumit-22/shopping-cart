@@ -51,6 +51,8 @@ BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a c
    - Build and install the app on an emulator or physical device.
 
 ## 📸 Screenshots
+
+<p align="center">
 <img src="screenshots/splashScreen.jpg" width="300">
 <img src="screenshots/loginScreen.jpg" width="300">
 <img src="screenshots/deliveryScreen.jpg" width="300">
@@ -61,7 +63,7 @@ BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a c
 <img src="screenshots/paymentScreen.jpg" width="300">
 <img src="screenshots/profileScreen.jpg" width="300">
 <img src="screenshots/orderScreen.jpg" width="300">
-
+</p>
 
 ## 🛠️ Future Enhancements
 - Implement GraphQL for better API performance.
