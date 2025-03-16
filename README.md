@@ -50,6 +50,14 @@ BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a c
 4. **Run the App**
    - Build and install the app on an emulator or physical device.
 
+## 🎥 Demo Video
+<p align="center">
+  <a href="https://youtube.com/shorts/Mr7UwQQLoaE?si=pqh0X19FhZbbaMjB">
+    <img alt="Watch Video" >
+  </a>
+</p>
+
+
 ## 📸 Screenshots
 
 <p align="center">
