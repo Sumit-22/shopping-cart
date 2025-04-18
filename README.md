@@ -15,12 +15,12 @@ BlinkShop is a fully functional **e-commerce application** built using **Kotlin*
 - **📍 Real-Time Location Sharing**: Both the customer and the delivery partner can see each other's location, ensuring better coordination and faster deliveries.
 
 ## 🏗️ Architecture & Design Pattern
-BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a clean separation of concerns and better maintainability.
+BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**.
 
-- **Model**: Defines data structures and business logic.
+- **Model**: Data and business logic.
 - **View**: UI layer (XML).
-- **ViewModel**: Handles UI logic, LiveData, and communicates with repositories.
-- **Repository**: Manages data sources (Firebase, API calls, local storage).
+- **ViewModel**: Handles UI logic, LiveData etc.
+- **Repository**: Data handling(Firebase, API calls, local DB).
 
 ## 🛠️ Tech Stack
 - **Language**: Kotlin
@@ -29,8 +29,7 @@ BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a c
 - **Database**: Firebase Firestore
 - **Networking**: Retrofit + Coroutines
 - **State Management**: LiveData & ViewModel
-- **Payment Integration**: Razorpay
-- **Local Storage**: Shared Preferences/Room Database
+- **Local Storage**: Shared Preferences/Room DB
 - **Version Control**: Git & GitHub
 
 ## 🚀 Installation & Setup
@@ -38,6 +37,7 @@ BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a c
 - Android Studio (latest version)
 - Firebase Project with Firestore setup
 - Razorpay API Key
+- Google Maps API Key
 
 ### Steps
 1. **Clone the Repository**
@@ -47,8 +47,10 @@ BlinkShop follows the **MVVM (Model-View-ViewModel) architecture**, ensuring a c
 2. **Open in Android Studio**
 3. **Configure Firebase**
    - Add `google-services.json` to the `app/` directory.
+4. **Add Razorpay & Maps API keys**
 4. **Run the App**
    - Build and install the app on an emulator or physical device.
+   - Minimum SDK: 23 (Android 6.0+)
 
 ## 🎥 Demo Video
 <p align="start">
